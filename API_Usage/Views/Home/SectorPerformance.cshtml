@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "SectorPerformance";
+}
+
+
+@model IEnumerable<API_Usage.Models.SectorPerformance_Model>
+
+<h2>SectorPerformance</h2>
+
+    <hr />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Performance
+                </th>
+                <th>
+                    Last Updated
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.performance)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.lastUpdated)
+                    </td>
+                </tr>
+
+            }
+
+            @{
+                Model.Count();
+            }
+            <tr>
+                <td>
+                    <a asp-controller="Home" asp-action="PopulatePerformance"><img src="~/img/button_save-data.png" /></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+    alertDbSave(@ViewBag.dbSuccessComp);
+</script>
+

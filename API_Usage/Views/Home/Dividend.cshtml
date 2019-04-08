@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewData["Title"] = "Dividend";
+}
+
+<h2>Dividend</h2>
+
+@model IEnumerable<API_Usage.Models.Dividend_Model>
+
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Exdate
+            </th>
+            <th>
+                Payment Date
+            </th>
+            <th>
+                Record Date
+            </th>
+            <th>
+                Declared Date
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Qualified
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.exdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.paymentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.recordDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.declaredDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.qualified)
+            </td>
+        </tr>
+        }
+
+        @{
+            Model.Count();
+        }
+        <tr>
+            <td>
+                <a asp-controller="Home" asp-action="PopulateDividend"><img src="~/img/button_save-data.png" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    alertDbSave(@ViewBag.dbSuccessComp);
+</script>

@@ -1,0 +1,53 @@
+﻿@{
+  ViewData["Title"] = "Index";
+}
+
+<h2>IEX Trading Application</h2>
+<hr />
+
+<div>
+    <p>
+        This application let's you fetch trading data from IEX via their public
+        <a href="https://iextrading.com/developer/">API</a>.
+        <br />
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="Symbols">Symbols</a> tab fetches symbols data from the
+        <a href="https://iextrading.com/developer/docs/#reference-data">IEX Reference API </a> and displays the results.
+        This data can also be saved in the local database.
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="SectorPerformance">Sector Performance</a> tab fetches data from the
+        <a href="https://iextrading.com/developer/docs/#sector-performance">IEX Reference API </a> and displays the results.
+        This sector performance data can also be saved in the local database.
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="Dividend">Dividend</a> tab fetches data from the
+        <a href="https://iextrading.com/developer/docs/#iex-dividends">IEX Reference API </a> and displays the results.
+        This dividends data can also be saved in the local database.
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="News">News</a> tab fetches data from the
+        <a href="https://iextrading.com/developer/docs/#news">IEX Reference API </a> and displays the results.
+        This news can also be saved in the local database.
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="InFocus">Trade Infocus</a> tab fetches data from the
+        <a href="https://iextrading.com/developer/docs/#list">IEX Reference API </a> and displays the results.
+        This infocus data can also be saved in the local database.
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="Chart">Chart</a> tab let's you select a Company(symbol) and fetches a quote from
+        <a href="https://iextrading.com/developer/docs/#stocks">IEX Stock API</a>.
+        The chart can also be saved in the local database.
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="History">History</a> tab fetches the data from
+        <a href="hhttps://api.iextrading.com/1.0/stock/market/list/gainers">IEX Stock API</a>.
+        The history can also be saved in the local database.
+        <br />
+        The <a asp-area="" asp-controller="Home" asp-action="Refresh">Refresh</a> tab let's you refresh the local database, that is, remove all its contents.
+    </p>
+  <p>
+    The application demonstrates the following -
+    <ul>
+      <li>Connection to REST API (the example uses IEXTrading, an easy-to-use API that provides stock data)</li>
+      <li>Parsing the Json objects returned from the API</li>
+      <li>Modeling API results as entities</li>
+      <li>Persisting data to a relational database</li>
+    </ul>
+  </p>
+</div>

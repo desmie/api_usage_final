@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewData["Title"] = "News";
+}
+
+<h2>Financial</h2>
+
+@model IEnumerable<API_Usage.Models.News_Model>
+
+<h2>Financial</h2>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                datetime
+            </th>
+            <th>
+                headline
+            </th>
+            <th>
+                source
+            </th>
+            <th>
+                url
+            </th>
+            <th>
+                summary
+            </th>
+            <th>
+                related
+            </th>
+            <th>
+                image
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.datetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.headline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.summary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.related)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.image)
+            </td>
+            
+        </tr>
+        }
+
+        @{
+            Model.Count();
+        }
+        <tr>
+            <td>
+                <a asp-controller="Home" asp-action="PopulateNews"><img src="~/img/button_save-data.png" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    alertDbSave(@ViewBag.dbSuccessComp);
+</script>
+
+

@@ -1,0 +1,12 @@
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\bin\Release\netcoreapp2.0\API_Usage.deps.json
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\bin\Release\netcoreapp2.0\API_Usage.runtimeconfig.json
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\bin\Release\netcoreapp2.0\API_Usage.runtimeconfig.dev.json
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\bin\Release\netcoreapp2.0\API_Usage.dll
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\bin\Release\netcoreapp2.0\API_Usage.pdb
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\obj\Release\netcoreapp2.0\API_Usage.csprojAssemblyReference.cache
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\obj\Release\netcoreapp2.0\API_Usage.csproj.CoreCompileInputs.cache
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\obj\Release\netcoreapp2.0\API_Usage.AssemblyInfoInputs.cache
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\obj\Release\netcoreapp2.0\API_Usage.AssemblyInfo.cs
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\obj\Release\netcoreapp2.0\API_Usage.dll
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\obj\Release\netcoreapp2.0\API_Usage.pdb
+C:\Users\fdesm\Source\Repos\API_Usage3\API_Usage\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs

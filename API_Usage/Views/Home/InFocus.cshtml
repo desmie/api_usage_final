@@ -1,0 +1,137 @@
+﻿@model IEnumerable<API_Usage.Models.Infocus_Model>
+
+@{
+    ViewData["Title"] = "InFocus";
+}
+
+<h2>Infocus</h2>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                symbol
+            </th>
+            <th>
+
+                companyName
+            </th>
+            <th>
+
+                primaryExchange
+            </th>
+            <th>
+
+                sector
+            </th>
+            <th>
+
+                calculationPrice
+            </th>
+            <th>
+
+                open
+            </th>
+            <th>
+
+                openTime
+            </th>
+            <th>
+
+                close
+            </th>
+            <th>
+
+                closeTime
+            </th>
+            <th>
+
+                high
+            </th>
+            <th>
+
+                low
+            </th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.symbol)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.companyName)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.primaryExchange)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.sector)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.calculationPrice)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.open)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.openTime)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.close)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.closeTime)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.high)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.low)
+                </td>
+
+                
+            </tr>
+        }
+
+        @{
+            Model.Count();
+        }
+        <tr>
+            <td>
+                <a asp-controller="Home" asp-action="PopulateInfocus"><img src="~/img/button_save-data.png" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    alertDbSave(@ViewBag.dbSuccessComp);
+</script>

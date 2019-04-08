@@ -1,0 +1,354 @@
+﻿
+@{
+    ViewData["Title"] = "History";
+}
+
+<h2>History</h2>
+@model IEnumerable<API_Usage.Models.Historical_Summary>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+
+                uniqueSymbolsTraded
+            </th>
+            <th>
+
+                averageDailyVolume
+            </th>
+            <th>
+
+                averageDailyRoutedVolume
+            </th>
+            <th>
+
+                averageMarketShare
+            </th>
+            <th>
+
+                averageOrderSize
+            </th>
+            <th>
+
+                averageFillSize
+            </th>
+            <th>
+
+                bin100Percent
+            </th>
+            <th>
+
+                bin101Percent
+            </th>
+            <th>
+
+                bin200Percent
+            </th>
+            <th>
+
+                bin300Percent
+            </th>
+            <th>
+
+                bin400Percent
+            </th>
+            <th>
+
+                bin500Percent
+            </th>
+            <th>
+
+                bin1000Percent
+            </th>
+            <th>
+
+                bin5000Percent
+            </th>
+            <th>
+
+                bin10000Percent
+            </th>
+            <th>
+
+                bin10000Trades
+            </th>
+            <th>
+
+                bin20000Trades
+            </th>
+            <th>
+
+                bin50000Trades
+            </th>
+            <th>
+
+                blockPercent
+            </th>
+            <th>
+
+                selfCrossPercent
+            </th>
+            <th>
+
+                etfPercent
+            </th>
+            <th>
+
+                largeCapPercent
+            </th>
+            <th>
+
+                midCapPercent
+            </th>
+            <th>
+
+                smallCapPercent
+            </th>
+            <th>
+
+                venueARCXFirstWaveWeight
+            </th>
+            <th>
+
+                venueBATSFirstWaveWeight
+            </th>
+            <th>
+
+                venueBATYFirstWaveWeight
+            </th>
+            <th>
+
+                venueEDGAFirstWaveWeight
+            </th>
+            <th>
+
+                venueEDGXFirstWaveWeight
+            </th>
+            <th>
+
+                venueOverallFirstWaveWeight
+            </th>
+            <th>
+
+                venueXASEFirstWaveWeight
+            </th>
+            <th>
+
+                venueXBOSFirstWaveWeight
+            </th>
+            <th>
+
+                venueXCHIFirstWaveWeight
+            </th>
+            <th>
+
+                venueXCISFirstWaveWeight
+            </th>
+            <th>
+
+                venueXNGSFirstWaveWeight
+            </th>
+            <th>
+
+                venueXNYSFirstWaveWeight
+            </th>
+            <th>
+
+                venueXPHLFirstWaveWeight
+            </th>
+            <th>
+
+                venueARCXFirstWaveRate
+            </th>
+            <th>
+
+                venueBATSFirstWaveRate
+            </th>
+            <th>
+
+                venueBATYFirstWaveRate
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.uniqueSymbolsTraded)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.averageDailyVolume)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.averageDailyRoutedVolume)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.averageMarketShare)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.averageOrderSize)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.averageFillSize)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin100Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin101Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin200Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin300Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin400Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin500Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin1000Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin5000Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin10000Percent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin10000Trades)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin20000Trades)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.bin50000Trades)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.blockPercent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.selfCrossPercent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.etfPercent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.largeCapPercent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.midCapPercent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.smallCapPercent)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueARCXFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueBATSFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueBATYFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueEDGAFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueEDGXFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueOverallFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueXASEFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueXBOSFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueXCHIFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueXCISFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueXNGSFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueXNYSFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueXPHLFirstWaveWeight)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueARCXFirstWaveRate)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueBATSFirstWaveRate)
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.venueBATYFirstWaveRate)
+                </td>
+            </tr>
+        }
+
+        @{
+            Model.Count();
+        }
+        <tr>
+            <td>
+                <a asp-controller="Home" asp-action="PopulateHistory"><img src="~/img/button_save-data.png" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    alertDbSave(@ViewBag.dbSuccessComp);
+</script>
